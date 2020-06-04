@@ -10,24 +10,40 @@ namespace School
             Console.WriteLine("School Days");
             Console.WriteLine();
 
-
             List<Student> students = GetStudents();
             List<Instructor> instructors = GetInstructors();
             List<Lesson> lessons = GetLessons();
 
+            List<ILearner> allLearners = new List<ILearner>();
+            foreach (Student student in students)
+            {
+                allLearners.Add(student);
+            }
+            foreach (Instructor instructor in instructors)
+            {
+                allLearners.Add(instructor);
+            }
+
             Instructor anInstructor = instructors[0];
             foreach (Lesson aLesson in lessons)
             {
-                foreach (Student aStudent in students)
+                foreach (ILearner learner in allLearners)
                 {
-                    anInstructor.Teach(aLesson, aStudent);
+                    anInstructor.Teach(aLesson, learner);
                 }
             }
 
-            foreach (Student aStudent in students)
+            foreach (ILearner learner in allLearners)
             {
-                aStudent.PrintKnowledge();
+                learner.PrintKnowledge();
             }
+
+            Student firstStudent = students[0];
+            List<ILearner> learners = new List<ILearner>();
+            learners.Add(anInstructor);
+            learners.Add(firstStudent);
+
+            IEnumerable<ITeacher> teachers = new List<ITeacher>();
         }
 
         static List<Student> GetStudents()
