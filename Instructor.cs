@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 namespace School
 {
+    // An Instructor IS A Person, a Learner and a Teacher
     public class Instructor : Person, ILearner, ITeacher
     {
         private List<Lesson> _lessons = new List<Lesson>();

@@ -10,10 +10,12 @@ namespace School
             Console.WriteLine("School Days");
             Console.WriteLine();
 
+            // Get all the data
             List<Student> students = GetStudents();
             List<Instructor> instructors = GetInstructors();
             List<Lesson> lessons = GetLessons();
 
+            // Create a list of all the Learners
             List<ILearner> allLearners = new List<ILearner>();
             foreach (Student student in students)
             {
@@ -24,6 +26,7 @@ namespace School
                 allLearners.Add(instructor);
             }
 
+            // Teach everyone
             Instructor anInstructor = instructors[0];
             foreach (Lesson aLesson in lessons)
             {
@@ -33,6 +36,7 @@ namespace School
                 }
             }
 
+            // Display all the lessons that each learner understands
             foreach (ILearner learner in allLearners)
             {
                 learner.PrintKnowledge();
@@ -43,9 +47,11 @@ namespace School
             learners.Add(anInstructor);
             learners.Add(firstStudent);
 
+            // List implements the IEnumerable interface!
             IEnumerable<ITeacher> teachers = new List<ITeacher>();
         }
 
+        // Create and return a list of Students
         static List<Student> GetStudents()
         {
             return new List<Student>() {
@@ -70,6 +76,7 @@ namespace School
             };
         }
 
+        // Create and return a list of Instructors
         static List<Instructor> GetInstructors()
         {
             return new List<Instructor>() {
@@ -92,6 +99,7 @@ namespace School
             };
         }
 
+        // Create and return a list of Lessons
         static List<Lesson> GetLessons()
         {
             return new List<Lesson>() {
