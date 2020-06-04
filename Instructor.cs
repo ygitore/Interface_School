@@ -3,30 +3,14 @@ using System.Collections.Generic;
 
 namespace School
 {
-    public class Instructor : Person, ILearner, ITeacher
+    public class Instructor : Person
     {
-        private List<Lesson> _lessons = new List<Lesson>();
         public decimal Salary { get; set; }
         public string Specialty { get; set; }
 
-        public void Learn(Lesson lesson)
+        public void Teach(Lesson lesson, Student student)
         {
-            _lessons.Add(lesson);
-        }
-
-        public void PrintKnowledge()
-        {
-            Console.WriteLine($"Instructor, {FirstName} {LastName}, has learned:");
-            foreach (Lesson lesson in _lessons)
-            {
-                Console.WriteLine(lesson);
-            }
-            Console.WriteLine();
-        }
-
-        public void Teach(Lesson lesson, ILearner learner)
-        {
-            learner.Learn(lesson);
+            student.Learn(lesson);
         }
     }
 }

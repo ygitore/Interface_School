@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace School
 {
-    public class Student : Person, ILearner, ITeacher
+    public class Student : Person
     {
         private List<Lesson> _lessons = new List<Lesson>();
 
@@ -22,11 +22,6 @@ namespace School
                 Console.WriteLine(lesson);
             }
             Console.WriteLine();
-        }
-
-        public void Teach(Lesson lesson, ILearner learner)
-        {
-            learner.Learn(lesson);
         }
     }
 }
