@@ -1,0 +1,13 @@
+/home/tgwtg/workspace/School/obj/Debug/netcoreapp3.1/School.csprojAssemblyReference.cache
+/home/tgwtg/workspace/School/obj/Debug/netcoreapp3.1/School.AssemblyInfoInputs.cache
+/home/tgwtg/workspace/School/obj/Debug/netcoreapp3.1/School.AssemblyInfo.cs
+/home/tgwtg/workspace/School/obj/Debug/netcoreapp3.1/School.csproj.CoreCompileInputs.cache
+/home/tgwtg/workspace/School/bin/Debug/netcoreapp3.1/School
+/home/tgwtg/workspace/School/bin/Debug/netcoreapp3.1/School.deps.json
+/home/tgwtg/workspace/School/bin/Debug/netcoreapp3.1/School.runtimeconfig.json
+/home/tgwtg/workspace/School/bin/Debug/netcoreapp3.1/School.runtimeconfig.dev.json
+/home/tgwtg/workspace/School/bin/Debug/netcoreapp3.1/School.dll
+/home/tgwtg/workspace/School/bin/Debug/netcoreapp3.1/School.pdb
+/home/tgwtg/workspace/School/obj/Debug/netcoreapp3.1/School.dll
+/home/tgwtg/workspace/School/obj/Debug/netcoreapp3.1/School.pdb
+/home/tgwtg/workspace/School/obj/Debug/netcoreapp3.1/School.genruntimeconfig.cache
