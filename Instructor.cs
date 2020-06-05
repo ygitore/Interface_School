@@ -22,7 +22,6 @@ namespace School
                 Console.WriteLine(lesson);
             }
         }
-
         public void Teach(Lesson lesson, ILearner learner)
         {
             learner.Learn(lesson);
